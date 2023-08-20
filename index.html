@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- CONTEINER DO FORMULÁRIO -->
+    <div class="container">
+        <label for="password">Senha</label>
+        <input type="password" id="passwordInput">
+        <input type="checkbox" id="passwordCheckbox"> Mostar Senha
+    </div>
+
+    <script>
+        // VARIÁVEIS
+        const input = document.getElementById("passwordInput")
+        const check = document.getElementById("passwordCheckbox")
+
+        // FUNÇÃO
+        check.addEventListener("click",()=>{
+            if(check.checked) {
+                input.type = "text"
+            } else {
+                input.type = "password"
+            }
+        })
+
+    </script>
+</body>
+</html>
