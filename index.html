@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            padding: 2rem;
+            border: 1px solid #b4b4b4;
+            border-radius: 0.5rem;
+        }
+
+        label {
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        input[type="password"],
+        input[type="text"] {
+            display: block;
+            padding: .5rem;
+            border: 1px solid #b4b4b4;
+            border-radius: 2px;
+            outline: none;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 0.5rem;
+            margin-left: 0;
+        }
+
+    </style>
+
 </head>
 <body>
-    <!-- CONTEINER DO FORMULÁRIO -->
+    <!-- CONTEINER DO FORMULÁRIO
+     -->
     <div class="container">
         <label for="password">Senha</label>
         <input type="password" id="passwordInput">
